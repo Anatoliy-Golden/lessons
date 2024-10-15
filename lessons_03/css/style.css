@@ -1,0 +1,94 @@
+@import url("reset.css");
+* {
+    /* color: red; */
+}
+/* Заголовки */
+h1 {
+    color: green;
+}
+
+.title {
+    color: cornflowerblue;
+}
+
+h1.title {
+    color: darkcyan;
+}
+
+h2 {
+    color: darkblue;
+}
+
+.title-lavra {
+    color: cadetblue;
+}
+
+h2.title-lavra {
+    color: darkgreen;
+}
+
+/* Параграф */
+.text-lavra {
+    color: cadetblue;
+}
+
+p.text-deribasovskaya {
+    color: coral;
+}
+
+p {
+    color: cornflowerblue;
+}
+
+p,
+.text-lavra,
+p.text-deribasovskaya {
+    /* color: chocolate; */
+}
+
+/* Селектор атбрибута
+   Обращение ко всем элементам 
+   по фрагменту слова в атребуте класса
+*/
+[class*="ti"] {
+    color: darkgreen;
+}
+
+/* Обращение к нескольким классам */
+.text-lavra,
+.text-fortress,
+.text-deribasovskaya {
+    /* color:dodgerblue; */
+}
+
+/* Вложеность списка*/
+.list .item {
+    color: red;
+}
+
+.list a {
+    color: lightsalmon;
+}
+
+/* (>)
+ Непосредственно вложенные
+ находятся на первом уровне влежености
+*/
+.kiev-pechersk-Lavra > h2 {
+    color: blue;
+}
+
+/* (~) 
+ Все элементы после !!!класса дальше по коду 
+ на том же уровне влежености
+*/
+.khotyn-fortress ~ p {
+    color:red ;
+}
+
+/* (+) 
+ Все элементы после класса
+ !!!непосредственно дальше по коду на том же уровне влежености*/
+.khotyn-fortress + p {
+    /* color:red ; */
+}
