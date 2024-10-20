@@ -1,0 +1,163 @@
+/* Подключение удаленно через gool.fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,600&display=swap'); */
+
+/* Подключение через расширение в < vs.code-gool.fonts > */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+
+/* Локальное подключение (находятса непосредственна в паке <fonts>) */
+@import url("fonts.css");
+
+/* Обнуление стилей браузера по умолчанию */
+@import url("reset.css");
+
+body{
+    font-family: Work Sans, sans-serif;
+    color: #999;
+}
+
+.title{
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 30px;
+    color: #132238;
+    text-align: center;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.list-link{
+    color: blue;
+    line-height: 2;
+    text-decoration: line-through;
+    font-style: oblique;
+    text-decoration-color: red;
+    font-size: smaller;
+
+}
+
+.about-frontend{
+    text-align: center;
+    font-weight: 700;
+    color: #132238;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    line-height: 2;
+}
+
+.about-frontend-text{
+    text-shadow: 
+    5px 3px 5px red,
+    -3px 2px 1px green;
+    line-height: 2;
+}
+
+.subtitle{
+    text-align: center;
+    color: #132238;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-style: oblique;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: blue;
+    line-height: 2;
+    font-size: 50px;
+}
+
+.text{
+    line-height: 2;
+    letter-spacing: 3px;
+    font-style: oblique;
+    text-align: right;
+}
+
+.know-frontend{
+    text-align: center;
+    line-height: 5;
+    font-weight: 700;
+    font-style: oblique;
+    color: brown;
+    text-decoration: underline;
+    text-decoration-style: double;
+    letter-spacing: 5px;
+}
+
+.know-frontend-text{
+    line-height: 2;
+    color: green;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 3px 3px 7px blue;
+}
+
+.contacts,
+.contacts-menu{
+    text-align: right;
+    line-height: 2;
+    color: cornflowerblue;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.subtitle-porfolio{
+    font-family: Work Sans;
+    font-size: 38px;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    color: #132238;
+}
+
+.text-porfolio{
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #556070;
+}
+
+.subtitle-about-us{
+    color: #1E1B39;
+    font-family: "DM Sans";
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 95px;
+}
+
+.text-about-us{
+    color: #474464;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.subtitle-inroduse-product{
+    color: #091133;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px
+}
+
+.text-inroduse-product{
+    color: #505F98;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
