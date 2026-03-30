@@ -1,0 +1,119 @@
+/* ===================== */
+/* selector tag */
+/* ===================== */
+* {
+   color: black;
+}
+h1 {
+  color: red;
+}
+a {
+  color: green;
+}
+h2 {
+  color: orange;
+}
+h3 {
+  color: brown;
+}
+p {
+  color: steelblue;
+}
+li {
+  color: salmon;
+}
+/* ===================== */
+/* selector class */
+/* ===================== */
+.text {
+  color: chartreuse;
+}
+.sub-title {
+  color: coral;
+}
+.item {
+  color: darkblue;
+}
+/* ===================== */
+/* selector #id */
+/* ===================== */
+#some-id-1 {
+   color: aqua;
+}
+#some-id-2 {
+   color: yellow;
+}
+/* ===================== */
+/* selector attribute */
+/* ===================== */
+[class*="__link"] {
+   color: violet;
+}
+[target="_blank"] {
+   color: brown;
+}
+/* ===================== */
+/* selector combination */
+/* ===================== */
+p.text {
+   color: darkolivegreen;
+}
+.sub-title.title {
+   color: thistle;
+}
+p.text, 
+.sub-title,
+span {
+   color: rebeccapurple;
+}
+/* ===================== */
+/* selector cascading */
+/* ===================== */
+.article p {
+   color: tomato;
+}
+.article p.text {
+   color: green;
+}
+.article .sub-title {
+   color: aqua;
+}
+.article__container > h2 {
+   color: chartreuse;
+}
+.article__container > p.text + h2 {
+   color: steelblue;
+}
+.article__container > .kitchen > ul li.item ~ li > a {
+   color: cornflowerblue;
+}
+.article + .medicine .medicine__title {
+   color: black;
+}
+.article + .medicine .medicine__title + .medicine__text {
+   color: turquoise;
+}
+.article + .medicine .medicine__text ~ .medicine__list > li {
+   color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
