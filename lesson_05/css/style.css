@@ -1,0 +1,196 @@
+body {
+  font-family: "Gilroy", sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* ============================== */
+.header {
+  margin-bottom: 50px;
+}
+.header__container {
+  padding-block: 20px;
+}
+.header__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 5px 3px 2px darkgreen;
+}
+/* ============================== */
+.property__container {
+  padding-block: 20px;
+}
+.property__item {
+  margin-block-end: 50px;
+}
+.property__title {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 5px 3px 2px darkgreen;
+  text-transform: capitalize;
+  margin-block-end: 20px;
+}
+.exemple__item {
+  background-color: green;
+  line-height: 2;
+  text-align: justify;
+  margin-block-end: 20px;
+}
+
+.exemple__block {
+  min-block-size: 100px;
+  background: #000;
+}
+/* ============================== */
+
+/* ------------------------------ */
+/* padding universal */
+/* ------------------------------ */
+.exemple__item--padding-universal-1 {
+  padding: 20px;
+}
+.exemple__item--padding-universal-2 {
+  padding: 20px 50px;
+}
+.exemple__item--padding-universal-3 {
+  padding: 20px 50px 80px;
+}
+.exemple__item--padding-universal-4 {
+  padding: 20px 50px 80px 110px;
+}
+
+/* ------------------------------ */
+/* podding for each side */
+/* ------------------------------ */
+.exemple__item--padding-top {
+  padding-top: 20px;
+}
+.exemple__item--padding-right {
+  padding-right: 50px;
+}
+.exemple__item--padding-bottom {
+  padding-bottom: 80px;
+}
+.exemple__item--padding-left {
+  padding-left: 110px;
+}
+
+/* ------------------------------ */
+/* negative margin */
+/* ------------------------------ */
+.exemple__item-margin {
+  background-color: #56a655;
+  min-height: 100px;
+}
+.exemple__item--margin-negative {
+  min-height: 100px;
+  margin-top: -50px;
+  background-color: rgb(30, 128, 255);
+  opacity: 0.5;
+}
+
+/* ------------------------------ */
+/* width */
+/* ------------------------------ */
+.exemple__item--width {
+  width: 500px;
+}
+.exemple__item--max-width {
+  max-width: 600px;
+}
+.exemple__item--min-width {
+  min-width: 300px;
+}
+
+/* ------------------------------ */
+/* height */
+/* ------------------------------ */
+.exemple__item--height {
+  height: 300px;
+}
+.exemple__item--max-height {
+  max-height: 50px;
+}
+.exemple__item--min-height {
+  min-height: 100px;
+}
+
+/* ------------------------------ */
+/* overflow */
+/* ------------------------------ */
+.exemple__item--overfow {
+  height: 150px;
+}
+.exemple__item--overfow-visible {
+  overflow: visible;
+}
+.exemple__item--overfow-hidden {
+  overflow: hidden;
+}
+.exemple__item--overfow-scroll {
+  overflow-y: scroll;
+}
+.exemple__item--overfow-auto {
+  overflow: auto;
+  min-height: 200px;
+}
+
+/* ------------------------------ */
+/* arrival */
+/* ------------------------------ */
+.arrival {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.arrival__container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff3e3;
+  padding: 60px 40px 40px;
+}
+.arrival__content {
+   margin-bottom: 50px;
+}
+.arrival__lable {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.arrival__title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.25;
+  color: #b88e2f;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+.arrival__text > p {
+  margin-bottom: 10px;
+}
+.arrival__button {
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 25px 70px;
+  background-color: #b88e2f;
+}
