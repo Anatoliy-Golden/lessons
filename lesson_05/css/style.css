@@ -40,7 +40,7 @@ body {
   margin-block-end: 20px;
 }
 .exemple__item {
-  background-color: green;
+  background-color: #5a9c5a;
   line-height: 2;
   text-align: justify;
   margin-block-end: 20px;
@@ -88,7 +88,7 @@ body {
 /* negative margin */
 /* ------------------------------ */
 .exemple__item-margin {
-  background-color: #56a655;
+  background-color: #5a9c5a;
   min-height: 100px;
 }
 .exemple__item--margin-negative {
