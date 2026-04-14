@@ -1,0 +1,418 @@
+/* default styles */
+body {
+  font-family: "Gilroy", sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+/* website shell */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* content limiter */
+[class*="__container"] {
+  max-width: 1230px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* ============================== */
+.header {
+  margin-bottom: 50px;
+}
+.header__container {
+  padding-block: 20px;
+}
+.header__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 5px 3px 2px darkgreen;
+}
+/* ============================== */
+.property__container {
+  padding-block: 20px;
+}
+.property__item {
+  margin-bottom: 100px;
+}
+.property__title {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 5px 3px 2px darkgreen;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.exemple__item {
+  text-align: justify;
+  min-height: 150px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+/* ============================== */
+
+/* ------------------------------ */
+/* border */
+/* ------------------------------ */
+.exemple__item--border-solid {
+  border: 10px solid green;
+}
+.exemple__item--border-double {
+  border: 10px double green;
+}
+.exemple__item--border-dashed {
+  border: 10px dashed green;
+}
+.exemple__item--border-dotted {
+  border: 10px dotted green;
+}
+
+/* ------------------------------ */
+/* border for each side */
+/* ------------------------------ */
+.exemple__item--border-top {
+  border-top: 10px solid green;
+}
+.exemple__item--border-right {
+  border-right: 10px double green;
+}
+.exemple__item--border-bottom {
+  border-bottom: 10px dashed green;
+}
+.exemple__item--border-left {
+  border-left: 10px dotted green;
+}
+
+/* ------------------------------ */
+/* outline  */
+/* ------------------------------ */
+.exemple__item--outline {
+  border: 10px solid orange;
+  outline: 10px solid green;
+  outline-offset: 10px;
+}
+
+/* ------------------------------ */
+/* border-radius  */
+/* ------------------------------ */
+.exemple__item--min-height-500 {
+  min-height: 300px;
+  border: 10px solid green;
+}
+.exemple__item--border-radius-1 {
+  border-radius: 20px;
+}
+.exemple__item--border-radius-2 {
+  border-radius: 20px 50px;
+}
+.exemple__item--border-radius-3 {
+  border-radius: 20px 50px 80px;
+}
+.exemple__item--border-radius-4 {
+  border-radius: 20px 50px 80px 110px;
+}
+
+/* ------------------------------ */
+/* border-radius for each side  */
+/* ------------------------------ */
+.exemple__item--border-top-left-radius {
+  border-top-left-radius: 20px;
+}
+.exemple__item--border-top-right-radius {
+  border-top-right-radius: 50px;
+}
+.exemple__item--border-bottom-right-radius {
+  border-bottom-right-radius: 80px;
+}
+.exemple__item--border-bottom-left-radius {
+  border-bottom-left-radius: 110px;
+}
+
+/* ------------------------------ */
+/* circle */
+/* ------------------------------ */
+.exemple__item--circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid green;
+}
+
+/* ------------------------------ */
+/* shadow box external and internal */
+/* ------------------------------ */
+.exemple__item--box-shadow {
+  /* box-shadow: 5px 5px 3px 2px green; */
+  /* box-shadow: -5px -5px 3px 2px green; */
+  /* box-shadow: 0 0 3px 5px green; */
+  box-shadow:
+    -15px -5px 3px 5px green,
+    15px -15px 3px 5px orange;
+}
+.exemple__item--box-shadow-internal {
+  box-shadow:
+    0 0 10px 5px green,
+    inset 15px 15px 5px 10px orange,
+    inset -15px -15px 5px 20px dodgerblue;
+}
+
+/* ------------------------------ */
+/* opacity */
+/* ------------------------------ */
+.exemple__item--opacity {
+  opacity: 0.2;
+}
+
+/* ------------------------------ */
+/* visibility */
+/* ------------------------------ */
+.exemple__item--visibility {
+  visibility: hidden;
+}
+
+/* ------------------------------ */
+/* background-color */
+/* ------------------------------ */
+.exemple__item--height-500 {
+  min-height: 500px;
+  background-color: #3ab286;
+}
+
+.exemple__item--background-color {
+  background-color: dodgerblue;
+}
+
+/* ------------------------------ */
+/* background-image */
+/* ------------------------------ */
+.exemple__item--background-image {
+  background-image: url("../img/01.png");
+}
+
+/* ------------------------------ */
+/* linear-gradient */
+/* ------------------------------ */
+.exemple__item--linear-gradient {
+  background: linear-gradient(45deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+/* ------------------------------ */
+/* background-repeat */
+/* ------------------------------ */
+.exemple__item--background-repeat-no-repeat {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+}
+.exemple__item--background-repeat-repeat-x {
+  background-image: url("../img/01.png");
+  background-repeat: repeat-x;
+}
+.exemple__item--background-repeat-repeat-y {
+  background-image: url("../img/01.png");
+  background-repeat: repeat-y;
+}
+.exemple__item--background-repeat-repeat-space {
+  background-image: url("../img/01.png");
+  background-repeat: space;
+}
+.exemple__item--background-repeat-repeat-round {
+  background-image: url("../img/01.png");
+  background-repeat: round;
+}
+
+/* ------------------------------ */
+/* background-position */
+/* ------------------------------ */
+.exemple__item--background-position {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  /* background-position: top; */
+  /* background-position: right; */
+  /* background-position: bottom; */
+  /* background-position: left; */
+  /* background-position: center; */
+  /* background-position: top left; */
+  /* background-position: top right; */
+  /* background-position: bottom right; */
+  /* background-position: bottom left; */
+  /* background-position: left 20px bottom 100px; */
+  /* background-position: 20px 50px; */
+  background-position: center bottom 50px;
+}
+
+/* ------------------------------ */
+/* background-attachment */
+/* ------------------------------ */
+.exemple__item--background-attachment {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ------------------------------ */
+/* background-size */
+/* ------------------------------ */
+.exemple__item--background-size {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: bottom right;
+}
+
+/* ------------------------------ */
+/* background-size contain */
+/* ------------------------------ */
+.exemple__item--background-size-contain {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ------------------------------ */
+/* background-size cover */
+/* ------------------------------ */
+.exemple__item--background-size-cover {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------------------------ */
+/* universal property background */
+/* ------------------------------ */
+.exemple__item--background-universal {
+  background: url("../img/01.png") center / 200px no-repeat dodgerblue;
+}
+
+/* ------------------------------ */
+/* background-multi */
+/* ------------------------------ */
+.exemple__item--background-multi {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%),
+    linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%),
+    url("../img/01.webp") 0 0 / 200px no-repeat,
+    url("../img/02.webp") bottom right / 300px no-repeat,
+    url("../img/01.png") center / cover no-repeat;
+}
+/* ================================== */
+
+/* ---------------------------------- */
+/* desinger */
+/* ---------------------------------- */
+.desinger {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: #b3b3b2;
+  background: #030303;
+}
+.desinger__hero {
+  padding-block: 95px 85px;
+  text-align: center;
+  background: url("../img/desinger/02.png") center / cover;
+}
+/* ---------------------------------- */
+/* контент блока hero */
+/* ---------------------------------- */
+.hero__title {
+  font-weight: 800;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #f9efec;
+  margin-bottom: 17px;
+}
+.button {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+
+  border-radius: 12px;
+  padding: 13px 78px;
+  background-color: #0a84ff;
+}
+
+/* ---------------------------------- */
+/* article */
+/* ---------------------------------- */
+.desinger__article {
+  padding-block: 35px;
+}
+.article__container {
+  max-width: 860px;
+  margin-inline: auto;
+}
+.article__content {
+  border: 1px solid #191919;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #1a1a1a;
+}
+
+/* ---------------------------------- */
+/* контент блока article */
+/* ---------------------------------- */
+/* заголоки */
+.article__content div > h2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #f9efec;
+  margin-bottom: 12px;
+}
+/* отступы между параграфами */
+.article__content div > p {
+  margin-bottom: 35px;
+}
+/* отступы между блоками div */
+.article__content > div {
+  margin-bottom: 25px;
+}
+/* отступы между пунктами */
+.article__content div > ul li {
+  background: url("../img/desinger/icon.svg") left 4px / 16px no-repeat;
+  padding-left: 30px;
+  min-height: 16px;
+  margin-bottom: 12px;
+}
+
+/* ------------------------------ */
+/* furniro */
+/* ------------------------------ */
+.furniro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #000;
+  background: url("../img/desinger/03.png") center / cover;
+  background-color: #fff;
+  padding-block: 60px 98px;
+}
+
+.furniro__icon {
+  margin-bottom: 28px;
+}
+.furniro__title {
+  font-weight: 500;
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.furniro__text span {
+  font-weight: 500;
+  color: #000;
+  background: url("../img/desinger/03.svg") right / 8px no-repeat;
+  display: inline-block;
+  padding-right: 20px;
+  margin-right: 12px;
+}
