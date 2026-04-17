@@ -1,0 +1,358 @@
+/* ------------------------- */
+/* link fonts */
+/* ------------------------- */
+
+/* ------------------------- */
+/* default styles */
+/* ------------------------- */
+body {
+  font-family: "Gilroy", sans-serif;
+  background: #333;
+  color: #fff;
+}
+
+/* ------------------------- */
+/* website shell */
+/* ------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* ------------------------- */
+/* limit container */
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1230px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* ============================== */
+.header {
+  margin-bottom: 50px;
+}
+.header__container {
+  padding-block: 20px;
+}
+.header__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 5px 3px 2px darkgreen;
+}
+/* ============================== */
+.property {
+  padding-block: 20px;
+}
+.property__item:not(:last-child) {
+  margin-bottom: 100px;
+}
+.property__title {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 5px 3px 2px darkgreen;
+  margin-bottom: 30px;
+}
+
+.exemple__item {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 0;
+}
+.exemple__item > * {
+  vertical-align: top;
+}
+.exemple__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+/* ---------- grid ---------- */
+.exemple__property {
+  width: 30.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* ---------- grid element indents ---------- */
+.exemple__property:not(:nth-child(3n)) {
+  margin-right: 4.2%;
+}
+.exemple__property:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 2.2%;
+}
+
+/* ---------- условие для .exemple__item  ---------- */
+.exemple__item:has(p) > .exemple__property {
+  margin-right: 0;
+}
+.exemple__property:has(p) {
+  width: 100%;
+}
+
+/* ---------- стилизация параграфа  ---------- */
+.exemple__property p {
+  padding: 15px;
+  color: #000;
+  height: 60px;
+  background-color: #a05f5f;
+}
+
+.exemple__property * {
+  font-size: 30px;
+  font-weight: 700;
+}
+.exemple__property > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* ---------- style link ---------- */
+.exemple__link {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 20px;
+  background-color: #467c46;
+}
+
+/* ------------------------- */
+/* pseudo state classes */
+/* ------------------------- */
+.exemple__link--hover:hover {
+  background-color: #d9b572;
+  color: black;
+  text-decoration: underline solid 3px black;
+  text-underline-offset: 3px;
+}
+
+.exemple__link--active:active {
+  background-color: #5e5eaf;
+  box-shadow: 0 0 5px 2px #d5afa0;
+}
+
+.exemple__link--focus:focus {
+  background-color: cadetblue;
+  box-shadow: 0 0 5px 2px #d5afa0;
+}
+
+.exemple__link--focus-visible:focus-visible {
+  background-color: #a05f5f;
+  box-shadow: 0 0 5px 2px #d5afa0;
+}
+
+.exemple__link--visited:visited {
+  background-color: dodgerblue;
+}
+
+.block:target {
+  display: block;
+}
+
+.block {
+  height: 200px;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 3.5;
+  background-color: #5e5eaf;
+  border-radius: 20px;
+  display: none;
+}
+
+/* ------------------------- */
+/* pseudo-classes in code */
+/* ------------------------- */
+.exemple__property--first p:first-child {
+  background-color: #d9b572;
+}
+
+.exemple__property--last p:last-child {
+  background-color: #d9b572;
+}
+
+.exemple__property--firs-type p:first-of-type {
+  background-color: #d9b572;
+}
+
+.exemple__property--odd-even p:nth-child(odd) {
+  max-width: 50%;
+  background-color: #d9b572;
+}
+.exemple__property--odd-even p:nth-child(even) {
+  background-color: #467c46;
+  color: #fff;
+  text-align: right;
+  max-width: 80%;
+  margin-left: auto;
+}
+
+.exemple__property--nth-3n p:nth-child(3n) {
+  background-color: #d9b572;
+  max-width: 50%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.exemple__property--nth-3n-plus p:nth-child(3n + 1) {
+  background-color: #d9b572;
+  max-width: 70%;
+  text-align: right;
+}
+
+.exemple__property--not p:not(:nth-child(2)) {
+  background-color: #467c46;
+}
+
+.exemple__property--has:has(:nth-child(2)) p:last-child {
+  background-color: #5e5eaf;
+  height: 100px;
+}
+/* ------------------------- */
+/* game */
+/* ------------------------- */
+.game {
+  padding-block: 20px;
+}
+.game__container {
+}
+.game__items {
+  background-color: antiquewhite;
+  height: 500px;
+}
+.game__item {
+  height: 50px;
+  background: red;
+}
+
+.game__item--1 {
+  width: 150px;
+}
+.game__item--2 {
+  width: 50px;
+  height: 300px;
+  margin-left: 100px;
+}
+.game__item--3 {
+  width: 300px;
+  margin-left: 100px;
+}
+.game__item--4 {
+  width: 50px;
+  height: 60px;
+  margin-left: 200px;
+}
+.game__item--5 {
+  width: 300px;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+.game__item--6 {
+  width: 50px;
+  height: 300px;
+  margin-left: 550px;
+  margin-top: -300px;
+}
+.game__item--7 {
+  width: 300px;
+  margin-left: 600px;
+  margin-top: -300px;
+}
+.game__item--8 {
+  width: 50px;
+  height: 340px;
+  margin-left: 900px;
+  margin-top: -50px;
+}
+
+.game__item:not(:nth-child(-n + 1)) {
+  visibility: hidden;
+}
+
+.game__item:hover + .game__item,
+.game__item:hover {
+  background-color: #467c46;
+  visibility: visible;
+}
+
+/* ------------------------- */
+/* nature */
+/* ------------------------- */
+.nature {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.05px;
+  color: #000;
+  background-color: #fff;
+  padding-block: 20px;
+}
+.nature__container {
+  max-width: 501px;
+}
+
+.nature__body > * {
+  margin-bottom: 20px;
+}
+
+.nature__content {
+  margin-bottom: 60px;
+}
+.nature__content > * {
+  margin-bottom: 20px;
+}
+.nature__title {
+  font-size: 50px;
+  color: #131313;
+}
+.nature__title::before {
+  content: "";
+  width: 40%;
+  height: 4px;
+  background: linear-gradient(90deg, #12ff46 0%, #000 100%);
+  border-radius: 2px;
+  display: block;
+}
+
+.nature__title > span {
+  font-weight: 700;
+  color: #1aaf5b;
+}
+.nature__text {
+  opacity: 0.6;
+}
+.nature__text > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.nature__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  padding: 25px 40px;
+  border-top-right-radius: 18px;
+  background-color: #1aaf5b;
+
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.05px;
+  color: #fff;
+}
+.button  span::after {
+  content: "";
+  width: 20px;
+  height: 10px;
+  background: url("../img/nature/01.svg") left / 20px no-repeat;
+  margin-left: 18px;
+}
+.button:hover {
+  background-color: #348156;
+}
+
+.nature__body > *:last-child {
+  margin-bottom: 0;
+}
