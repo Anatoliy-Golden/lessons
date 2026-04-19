@@ -1,0 +1,308 @@
+/* ------------------------- */
+/* default styles */
+/* ------------------------- */
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+/* ------------------------- */
+/* website shell */
+/* ------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/* ------------------------- */
+/* limit container */
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1230px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* ============================== */
+.header {
+  margin-bottom: 50px;
+}
+.header__container {
+  padding-block: 20px;
+}
+.header__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 5px 3px 2px darkgreen;
+}
+/* ============================== */
+/* block property */
+.property {
+  padding-block: 30px;
+}
+.property__item:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+/* grid of elements */
+.property__example {
+  font-size: 0;
+}
+.example__item {
+  width: 28.88%;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+  /* background-color: #5ca75c; */
+}
+.example__link {
+  width: 100%;
+  min-height: 70px;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  background-color: #5ca75c;
+}
+
+/* indents between grid elements */
+.example__item:not(:nth-child(3n)) {
+  margin-right: 6.67%;
+}
+.example__item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 3.67%;
+}
+
+/* ------------------------- */
+/* state pseudo-classes */
+/* ------------------------- */
+.example__link--hover:hover {
+  background-color: dodgerblue;
+}
+.example__link--active:active {
+  background-color: chocolate;
+}
+.example__link--visited:visited {
+  background-color: skyblue;
+}
+.example__link--focus:focus {
+  background-color: slateblue;
+}
+.example__link--focus-visible:focus-visible {
+  background-color: skyblue;
+}
+
+/* hidden block */
+.block-hidden {
+  min-height: 500px;
+  background-color: #000;
+  border: 5px solid green;
+  display: none;
+}
+.block-hidden:target {
+  margin-top: 50px;
+  display: block;
+}
+
+/* ----------------------------------------------- */
+/* if there is a paragraph */
+.example__item:has(.example__property > p) {
+  width: 100%;
+  margin-right: 0;
+}
+.example__item:has(p):not(:last-child) {
+  margin-bottom: 100px;
+}
+
+/* paragraph styling */
+.example__property > p {
+  height: 50px;
+  padding: 15px;
+  letter-spacing: 3px;
+  color: #000;
+  background-color: #5c89a7;
+}
+.example__property > p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* ------------------------- */
+/* pseudo-classes in code */
+/* ------------------------- */
+.example__property--first p:first-child {
+  background-color: antiquewhite;
+  width: 50%;
+}
+.example__property--first-type p:first-of-type {
+  width: 50%;
+  background-color: antiquewhite;
+}
+
+.example__property--nth-1 :nth-child(odd) {
+  background-color: antiquewhite;
+  width: 50%;
+}
+.example__property--nth-2 :nth-child(even) {
+  background-color: antiquewhite;
+  width: 50%;
+}
+.example__property--nth-3 :nth-child(3n) {
+  background-color: antiquewhite;
+  width: 50%;
+}
+.example__property--nth-4 :nth-child(3n + 1) {
+  background-color: antiquewhite;
+  width: 50%;
+}
+.example__property--nth-5 :nth-child(3n + 2),
+.example__property--nth-5 :nth-child(4n + 2) {
+  background-color: antiquewhite;
+  width: 50%;
+}
+
+/* ------------------------- */
+/* game */
+/* ------------------------- */
+.game {
+  padding-block: 20px;
+}
+.game__items {
+  background-color: antiquewhite;
+  height: 500px;
+}
+.game__item {
+  height: 50px;
+  background: red;
+}
+
+.game__item--1 {
+  width: 150px;
+}
+.game__item--2 {
+  width: 50px;
+  height: 300px;
+  margin-left: 100px;
+}
+.game__item--3 {
+  width: 300px;
+  margin-left: 100px;
+}
+.game__item--4 {
+  width: 50px;
+  height: 60px;
+  margin-left: 200px;
+}
+.game__item--5 {
+  width: 300px;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+.game__item--6 {
+  width: 50px;
+  height: 300px;
+  margin-left: 550px;
+  margin-top: -300px;
+}
+.game__item--7 {
+  width: 300px;
+  margin-left: 600px;
+  margin-top: -300px;
+}
+.game__item--8 {
+  width: 50px;
+  height: 340px;
+  margin-left: 900px;
+  margin-top: -50px;
+}
+
+/* hide all but the first */
+.game__item:not(:nth-child(-n + 1)) {
+  visibility: hidden;
+}
+/* show on hover */
+.game__item:hover + .game__item,
+.game__item:hover {
+  background-color: #467c46;
+  visibility: visible;
+}
+
+/* ------------------------- */
+/* nature */
+/* ------------------------- */
+
+/* default styles */
+.nature {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.05px;
+  color: #000;
+  background-color: #fff;
+  padding-block: 30px;
+}
+.nature__container {
+  max-width: 505px;
+}
+
+/* default indentation */
+.nature__content > * {
+  margin-bottom: 20px;
+}
+.nature__content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* content styling */
+.nature__header {
+  margin-bottom: 60px;
+}
+.nature__title {
+  font-size: 50px;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.nature__title > span {
+  font-weight: 700;
+  color: #1aaf5b;
+}
+.nature__title::before {
+  content: "";
+  width: 41%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #12ff46 0%, #000 100%);
+  display: block;
+}
+
+.nature__text p {
+  opacity: 0.6;
+}
+.nature__text > p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* styling button */
+.button {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.45px;
+  color: #fff;
+  padding: 25px 40px;
+  background-color: #1aaf5b;
+  border-top-right-radius: 20px;
+}
+.button span::after {
+   content: "";
+   width: 20px;
+   height: 10px;
+   background: url("../img/nature/01.svg") right / 20px no-repeat;
+   margin-left: 20px;
+}
+/* button hover */
+.button:hover {
+   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}

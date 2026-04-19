@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- шрифт через плагин -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- локальное подключение шрифтов -->
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <!-- сброс стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- подключение файла css к html -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 07</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__title">pseudo classes and elements</h1>
+        </div>
+      </header>
+
+      <!-- page -->
+      <main class="page">
+        <div class="property">
+          <div class="property__container">
+            <!--  -->
+            <div class="property__item">
+              <div class="property__example example">
+                <!-- hover -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--hover" href="#1">hover</a>
+                  </div>
+                </div>
+
+                <!-- active -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--active" href="#2">active</a>
+                  </div>
+                </div>
+
+                <!-- visited -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--visited" href="#4">visited</a>
+                  </div>
+                </div>
+
+                <!-- focus -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--focus" href="#5">focus</a>
+                  </div>
+                </div>
+
+                <!-- focus-visible -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--focus-visible" href="#6">focus-visible</a>
+                  </div>
+                </div>
+
+                <!-- target -->
+                <div class="example__item">
+                  <div class="example__property">
+                    <a class="example__link example__link--target" href="#block-hidden">target</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- hidden block -->
+              <div class="block-hidden" id="block-hidden"></div>
+            </div>
+
+            <!-- pseudo-classes in code -->
+            <div class="property__item">
+              <div class="property__example example">
+                <!-- first-child -->
+                <div class="example__item">
+                  <div class="example__property example__property--first">
+                    <p>first-child</p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <!-- first-of-type -->
+                <div class="example__item">
+                  <div class="example__property example__property--first-type">
+                    <h2>H2 Sub-title</h2>
+                    <p>first-of-type</p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="example__item">
+                  <div class="example__property example__property--nth-1">
+                    <p>odd</p>
+                    <p></p>
+                    <p>odd</p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="example__item">
+                  <div class="example__property example__property--nth-2">
+                    <p></p>
+                    <p>even</p>
+                    <p></p>
+                    <p>even</p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="example__item">
+                  <div class="example__property example__property--nth-3">
+                    <p></p>
+                    <p></p>
+                    <p>3n</p>
+                    <p></p>
+                    <p></p>
+                    <p>3n</p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="example__item">
+                  <div class="example__property example__property--nth-4">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>3n + 1</p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="example__item">
+                  <div class="example__property example__property--nth-5">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>3n + 2</p>
+                    <p>4n + 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- game -->
+        <div class="game">
+          <div class="game__container">
+            <div class="game__items">
+              <div class="game__item game__item--1"></div>
+              <div class="game__item game__item--2"></div>
+              <div class="game__item game__item--3"></div>
+              <div class="game__item game__item--4"></div>
+              <div class="game__item game__item--5"></div>
+              <div class="game__item game__item--6"></div>
+              <div class="game__item game__item--7"></div>
+              <div class="game__item game__item--8"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nature -->
+        <div class="nature">
+          <div class="nature__container">
+            <div class="nature__content">
+
+              <div class="nature__header">
+                <h2 class="nature__title">Grown <span>by Nature</span></h2>
+                <div class="nature__text"><p>We grow our crops naturally. We are a fast-growing agricultural technology company passionate about ensuring food security. We leverage our technology to improve productivity & sales to promote food security for you and your family.</p></div>
+              </div>
+
+              <div class="nature__action action">
+                <a class="action__button button" href="#"><span>Learn more</span></a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+  </body>
+</html>
