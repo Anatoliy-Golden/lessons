@@ -170,12 +170,16 @@ body {
   color: #f9efec;
 
   margin-bottom: 12px;
+
 }
 .article__body ul > li {
   position: relative;
 
   padding-left: 26px;
   min-height: 16px;
+
+  cursor: default;
+  transition: all 0.5s;
 }
 
 /* отступы между пунктами */
@@ -193,4 +197,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* наведение на пункты */
+.article__body ul li:hover {
+   color: orange;
 }
