@@ -1,0 +1,196 @@
+/* ------------------------- */
+/* default styles */
+/* ------------------------- */
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #030303;
+
+  color: #fff;
+}
+
+/* ------------------------- */
+/* website shell */
+/* ------------------------- */
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/* ------------------------- */
+/* limit container */
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1310px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* ------------------------- */
+/*  */
+/* ------------------------- */
+.header {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 50;
+  width: 100%;
+}
+.header__container {
+}
+.header__menu {
+}
+
+/* ------------------------- */
+/* основное меню */
+/* ------------------------- */
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu__link {
+  padding-block: 16px;
+  font-size: 16px;
+}
+
+/* ------------------------- */
+/* выпадающие меню */
+/* ------------------------- */
+.menu__item,
+.sub-menu__item,
+.menu__link,
+.sub-menu__link {
+  position: relative;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 150px;
+  background-color: #0f0f0f;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+/* первый уровень вниз */
+.menu__item > .sub-menu {
+  top: 100%;
+  left: 0;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* второй уровень вправа */
+.sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+  border-radius: 2px;
+}
+
+/* появление меню любого уровня при наведении */
+.menu__item:hover > .sub-menu,
+.sub-menu__item:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* ----------------------------- */
+/* декоративная линия для ссылок */
+/* ----------------------------- */
+.menu__link::before,
+.sub-menu__link::before {
+  content: "";
+
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 176, 5, 0.48) 0%, rgba(91, 56, 94, 0.83) 100%);
+
+  transition: all 0.3s;
+}
+.menu__link::before {
+  bottom: 10px;
+  left: 0;
+  border-radius: 2px;
+}
+.sub-menu__link::before {
+  bottom: 5px;
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 176, 5, 0.48) 0%, rgba(91, 56, 94, 0.83) 100%);
+}
+/* появление декоративной линии при наведении */
+.menu__item:hover > .menu__link::before,
+.sub-menu__item:hover > .sub-menu__link::before {
+  width: 100%;
+}
+
+.sub-menu__item {
+  text-align: center;
+}
+.sub-menu__link {
+  padding-block: 10px;
+}
+
+/* ----------------------------- */
+/* статья */
+/* ----------------------------- */
+.article {
+  padding-block-start: 100px;
+}
+.article__container {
+  max-width: 700px;
+}
+
+.article__body {
+  border: 1px solid #191919;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #1a1a1a;
+}
+
+/* стилизация контента */
+.article__body h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #f9efec;
+
+  margin-bottom: 12px;
+}
+.article__body ul > li {
+  position: relative;
+
+  padding-left: 26px;
+  min-height: 16px;
+}
+
+/* отступы между пунктами */
+.article__body ul > li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* иконка */
+.article__body ul > li::before {
+  content: "";
+  width: 16px;
+  aspect-ratio: 1;
+  background: url("../img/article-icon/article-icon.svg") center / contain no-repeat;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
