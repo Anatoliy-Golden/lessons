@@ -1,0 +1,267 @@
+/* ------------------------- */
+/* default styles */
+/* ------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ------------------------- */
+/* website shell */
+/* ------------------------- */
+.wrapper {
+  min-block-size: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+/* ------------------------- */
+/* limit container */
+/* ------------------------- */
+[class*="__container"] {
+  max-width: 1270px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+/* ------------------------- */
+.contact {
+  padding-block: 60px;
+}
+.contact__container {
+}
+.contact__form {
+}
+
+/* размер формы */
+.form {
+  max-width: 530px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  margin-bottom: 50px;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* декоративная линия для лейбла */
+.form__label {
+  align-self: flex-start;
+  position: relative;
+}
+.form__label::after {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background-color: #000;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+
+  transition:
+    left 0.5s,
+    width 0.5s;
+}
+.form__item:focus-within .form__label::after {
+  width: 100%;
+  left: 0;
+}
+
+/* --------------------------- */
+/* стилизация инпута и текстового поля */
+/* --------------------------- */
+.form__input,
+.form__textarea {
+  width: 100%;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  padding-block: 25px;
+  padding-inline: 30px;
+  cursor: pointer;
+}
+
+.form__input::placeholder {
+  color: #9f9f9f;
+}
+
+/* --------------------------- */
+/* анимация инпута и текстового поля */
+/* --------------------------- */
+.form__input::placeholder,
+.form__textarea:focus::placeholder,
+.form__input:focus {
+  transition:
+    opacity 0.5s,
+    box-shadow 0.5s;
+}
+/* скрыть подпись при фокусе у инпута и текстового поля */
+.form__input:focus::placeholder,
+.form__textarea:focus::placeholder {
+  opacity: 0;
+}
+/* стилизация инпута и текстового поля при фокусе */
+.form__input:focus,
+.form__textarea:focus {
+  outline: transparent;
+  box-shadow: 0px 0px 8px 1px #000;
+}
+
+/* --------------------------- */
+/* стили для текстового поля */
+/* --------------------------- */
+.form__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* --------------------------- */
+/* стилизация кнопки */
+/* --------------------------- */
+.form__button {
+  min-width: 237px;
+  border: 1px solid #b88e2f;
+  border-radius: 5px;
+  background-color: #b88e2f;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 14px 28px;
+
+  transition: all 0.5s;
+}
+.form__button:hover,
+.form__button:focus {
+  scale: 1.1;
+  background-color: rgba(184, 143, 47, 0.533);
+  color: #000;
+  outline: none;
+}
+/* -------------------------------------------------- */
+.product {
+  padding-block: 30px;
+}
+.product__container {
+}
+
+/* размер формы */
+.product__form {
+  max-width: 123px;
+  margin-inline: auto;
+}
+
+.form-product {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-product__item {
+}
+.form-product__option {
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.option__title {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+.option__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.option__item {
+  font-size: 13px;
+  color: #000;
+}
+
+/* убрать стандартный кружок у радио кнопки */
+.option__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* --------------------------- */
+/* иметация кнопки выбора церез option__label */
+/* --------------------------- */
+.option__label {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------- */
+/* стили для выбраной радио кнопки size */
+/* --------------------------- */
+.option__label--size {
+  background-color: #f9f1e7;
+  border-radius: 5px;
+
+  transition: all 0.5s;
+}
+/* выбрать размер для радио кнопок size, через мышку и таб */
+.option__input-radio:checked + .option__label--size,
+.option__input-radio:focus + .option__label--size {
+  background-color: #b88e2f;
+  color: #fff;
+}
+/* стили при навидении радио кнопки size */
+.option__label--size:hover {
+  background-color: rgb(213, 207, 199);
+}
+
+/* --------------------------- */
+/* стили для выбраной радио кнопки color */
+/* --------------------------- */
+.option__label--color {
+  border-radius: 50%;
+}
+/* выбор цвета для радио кнопок color, через мышку и таб */
+.option__input-radio:checked + .option__label--color,
+.option__input-radio:focus + .option__label--color {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+/* цвета для радио кнопок выбора color */
+.option__label--color-purple {
+  background-color: #816dfa;
+}
+.option__label--color-black {
+  background-color: #000;
+}
+.option__label--color-gold {
+  background-color: #b88e2f;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- локальное подключение шрифтов -->
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    <!-- сброс стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- подключение файла css к html -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header"></header>
+
+      <!-- page -->
+      <main class="page">
+        <div class="contact">
+          <div class="contact__container">
+            <div class="contact__form">
+              <form class="form" action="#">
+                <!-- элементы формы -->
+                <div class="form__list">
+                  <!--  -->
+                  <div class="form__item">
+                    <label class="form__label" for="name-1">Your name</label>
+                    <input class="form__input" id="name-1" type="text" name="form[]" placeholder="Abc" required />
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="name-2">Email address</label>
+                    <input class="form__input" id="name-2" type="email" name="form[]" placeholder="Abc@def.com" required />
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="name-3">Email address</label>
+                    <input class="form__input" id="name-3" type="text" name="form[]" placeholder="This is an optional" />
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="name-4">Message</label>
+                    <textarea class="form__textarea" name="form[]" id="name-4" placeholder="Hi! i’d like to ask about" required></textarea>
+                  </div>
+                  <!--  -->
+                </div>
+                <!-- кнопка -->
+                <button class="form__button button" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="product__container">
+            <form class="product__form form-product" action="#">
+              <!-- размер -->
+              <div class="form-product__item">
+                <div class="form-product__option option">
+                  <h3 class="option__title">Size</h3>
+                  <div class="option__items">
+                    <!--  -->
+                    <div class="option__item">
+                      <input class="option__input-radio" type="radio" name="size" id="size-1" />
+                      <label class="option__label option__label--size" for="size-1">L</label>
+                    </div>
+                    <div class="option__item">
+                      <input class="option__input-radio" type="radio" name="size" id="size-2" />
+                      <label class="option__label option__label--size" for="size-2">XL</label>
+                    </div>
+                    <div class="option__item">
+                      <input class="option__input-radio" type="radio" name="size" id="size-3" />
+                      <label class="option__label option__label--size" for="size-3">XS</label>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+              <!-- цвет -->
+              <div class="form-product__item">
+                <div class="form-product__option option">
+                  <h3 class="option__title">Color</h3>
+                  <div class="option__items">
+                    <!--  -->
+                    <div class="option__item">
+                      <input class="option__input-radio" id="color-1" type="radio" name="color" />
+                      <label class="option__label option__label--color option__label--color-purple" for="color-1"></label>
+                    </div>
+                    <div class="option__item">
+                      <input class="option__input-radio" type="radio" name="color" id="color-2" />
+                      <label class="option__label option__label--color option__label--color-black" for="color-2"></label>
+                    </div>
+                    <div class="option__item">
+                      <input class="option__input-radio" type="radio" name="color" id="color-3" />
+                      <label class="option__label option__label--color option__label--color-gold" for="color-3"></label>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+  </body>
+</html>
